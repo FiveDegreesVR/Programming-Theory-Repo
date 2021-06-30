@@ -6,31 +6,37 @@ using UnityEngine.SceneManagement;
 
 public class MenuData : MonoBehaviour
 {
-    private Scene m_scene;
-    private string fish1Name { get; set; }
-    private string fish2Name { get; set; }
-    private string fish3Name { get; set; }
+    public static MenuData Instance;
+
+    public string fish1Name;
+    public string fish2Name;
+    public string fish3Name;
     [SerializeField] private InputField fish1Input;
     [SerializeField] private InputField fish2Input;
     [SerializeField] private InputField fish3Input;
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
-    private void Start()
-    {
-        m_scene = SceneManager.GetActiveScene();
-    }
-
-    private void Update()
-    {
-        if (m_scene.buildIndex == 0)
+        if (Instance != null) //creates singleton: only one instance can exist
         {
-            fish1Name = fish1Input.text;
-            fish2Name = fish2Input.text;
-            fish3Name = fish3Input.text;
+            Destroy(gameObject);
+            return;
         }
+        Instance = this; // declares this is the current instance of main manager object, can call MainManager.instance from any script
+        DontDestroyOnLoad(gameObject);
+    }
+
+
+    private void SetFishNames()
+    {
+        fish1Name = fish1Input.text;
+        fish2Name = fish2Input.text;
+        fish3Name = fish3Input.text;
+    }
+
+    public void LoadMainScene()
+    {
+        SetFishNames();
+        SceneManager.LoadScene(1);
     }
 }

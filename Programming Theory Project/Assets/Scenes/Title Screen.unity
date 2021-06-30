@@ -690,7 +690,7 @@ RectTransform:
   m_GameObject: {fileID: 785819942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 19.05, y: 11.603, z: 1}
+  m_LocalScale: {x: 172.332, y: 104.96422, z: 9.0463}
   m_Children: []
   m_Father: {fileID: 1234100462}
   m_RootOrder: 0
@@ -1119,7 +1119,6 @@ GameObject:
   - component: {fileID: 1234100461}
   - component: {fileID: 1234100460}
   - component: {fileID: 1234100459}
-  - component: {fileID: 1234100463}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1213,18 +1212,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1234100463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234100458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92049394fb1963b40bdc6be452b5b92e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1330687804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,9 +1295,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1234100463}
-        m_TargetAssemblyTypeName: LoadMain, Assembly-CSharp
-        m_MethodName: LoadMainGame
+      - m_Target: {fileID: 2054653751}
+        m_TargetAssemblyTypeName: MenuData, Assembly-CSharp
+        m_MethodName: LoadMainScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1685,7 +1672,7 @@ GameObject:
   - component: {fileID: 2054653751}
   m_Layer: 0
   m_Name: MenuManager
-  m_TagString: Untagged
+  m_TagString: AnimalData
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

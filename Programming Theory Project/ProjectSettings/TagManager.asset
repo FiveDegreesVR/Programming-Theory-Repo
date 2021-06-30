@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fish 1
+  - Fish 2
+  - Fish 3
+  - Crow
+  - AnimalData
   layers:
   - Default
   - TransparentFX
