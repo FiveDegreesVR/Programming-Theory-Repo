@@ -9,6 +9,11 @@ TagManager:
   - Fish 3
   - Crow
   - AnimalData
+  - Start button
+  - Fish 2 Input
+  - Fish 3 Input
+  - Fish 1 Input
+  - MenuManager
   layers:
   - Default
   - TransparentFX
