@@ -36,9 +36,9 @@ public class AnimalData : MonoBehaviour
 
     private void SetAnimalNames()
     {
-        fish1.SetFishName(menuData.fish1Name);
-        fish2.SetFishName(menuData.fish2Name);
-        fish3.SetFishName(menuData.fish3Name);
+        fish1.SetFishName(menuData.GetFish1Name());
+        fish2.SetFishName(menuData.GetFish2Name());
+        fish3.SetFishName(menuData.GetFish3Name());
         crow.SetCrowName("Jim");
     }
 
